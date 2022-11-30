@@ -1,42 +1,36 @@
-[![Build Status](https://travis-ci.org/Dynalon/mdwiki.png?branch=master)](https://travis-ci.org/Dynalon/mdwiki)
+# MDwiki - česká mutace
 
-MDwiki
-======
+https://github.com/egdilna/mdwiki_cz
 
-100% static single file CMS/Wiki done purely with client-side Javascript and HTML5.
 
-See http://www.mdwiki.info for more info and documentation.
+100% statický redakční systém vytvořený čistě pomocí Javascriptu na straně klienta a HTML5.
+
+Původní verze na  http://www.mdwiki.info včetně původní dokumentace, která je platná i pro tuto mutaci
 ------
 
-## !! This project is currently unmaintained!!
-
-Download
---------
-
-See <https://github.com/Dynalon/mdwiki/releases> for readily precompiled releases.
-
-How to build from source
-------------------------
-(applies to master branch, stable may differ)
-
-1. Install node.js >= 0.10 and npm (if not included)
-2. Clone the mdwiki repo
-3. Install deps and build MDwiki (you need automake installed - if you are on Windows check the contents of the Makefile for the list of commands to run them manually):
-
-```
-    make
-```
-
-4. Find the `mdwiki.html` in the `dist/` folder
-
-5. Development
-
-For development, use
-
-    grunt devel 
-
-To get unminified source code compiled to `dist/mdwiki-debug.html`, as well as auto file watching and livereload support. Symlink the development mdwiki file into your webroot for testing.
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Dynalon/mdwiki/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+# K čemu je to dobré?
 
+Pokud potřebujete rychle spravovat jednoduchý i složitější web a jako zdroj vám slouží sada souborů v textovém jazyce MarkDown a nechcete se mrcasit s nastavováním CMS a nebo generátoru jako je GitHub pages, tohle je možná právě pro vás. Českou mutaci jsme založili na originálním MDwiki, takže (skoro) vše co funguje v originálu tak bude fungovat i tady a možná i něco navíc.
+
+# Změny oproti původnímu MDwiki
+
+Vycházíme z originálu https://www.mdwiki.info ale s úpravami:
+
+### Počeštění některrých hlášek
+
+Původní MDwiki bylo striktně v angličtině, my jsme některé hlášky a informace počeštili, aby to bylo přijemnější pro čtení.
+
+### Počeštění datumů
+
+Také jsme přidali národní reprezentaci datumů a rozpoznání datumů psaných česky.
+
+
+### Počeštění alertů
+
+Původní MDwiki umí automaticky z textu vytvořit barevné body, tzv. alerty.
+
+Kromě vestavěných jsme přidali i české ekvivalenty a emotikonové ekvivalenty. Bude tedy fugnovat automatické formátování odstavců jež začínají na "Pozor: ", "Varování: ","Poznámka: ", "Vychytávka: ", a pro emotikony ⚠️, ℹ️, a 💡
+
+TIP: Podívejte se do zdrojového souboru readme.md na vygenerovaném webu a uvidíte, jak je tento odstavec v MarkDownu vytvořen.

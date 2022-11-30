@@ -1,0 +1,4 @@
+{
+"title":"název webu, konfiguruje se v souboru config.json",
+"additionalFooterText": "Text v patičce, lze upravit v souboru config.json"
+}
